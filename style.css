@@ -5,10 +5,15 @@ html {
 
 body {
   margin-bottom: 2rem;
+  background-color: whitesmoke;
 }
 
 a.nav-link {
   margin: 0.5rem;
+}
+
+header {
+    margin-bottom: 2rem;
 }
 
 .grid-container {
@@ -34,3 +39,58 @@ a.nav-link {
   text-align: center;
   justify-content: center;
 }
+
+.form-container {
+    max-width: 500px;
+    margin: auto;;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-container input[type="text"],
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.previous {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    display: flex;
+    justify-content: center;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.form-container br {
+    display: none;
+}
+
