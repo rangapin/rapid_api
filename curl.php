@@ -21,19 +21,5 @@ $err = curl_error($curl);
 
 curl_close($curl);
 
-if ($err) {
-	echo "cURL Error #:" . $err;
-} else {
-    $data = json_decode($response, true); 
-    if($data){
-        echo '<pre>';
-        foreach ($data['data']['coins'] as $coin) {
-            echo "Name: " . $coin['name'] . PHP_EOL;
-            echo "Symbol: " . $coin['symbol'] . PHP_EOL;
-            echo "Price: " . number_format($coin['price'], 2) . " USD" . PHP_EOL;
-            echo PHP_EOL;
-        }     
-        echo '<pre>';
-    }
-}
+
 ?>

@@ -1,0 +1,36 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 2rem;
+}
+
+a.nav-link {
+  margin: 0.5rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: #9370DB	;
+  padding: 14px;
+}
+
+.grid-container > div {
+  background-color: #F5F5F5	;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 18px;
+}
+
+.footer {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  justify-content: center;
+}
