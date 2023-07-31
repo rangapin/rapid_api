@@ -1,5 +1,5 @@
 <?php 
-http://localhost/php_projects/php_rapid_api/contact-page.php
+
 if(isset($_POST['submit'])) {
     $name = $_POST['name'];
     $subject = $_POST['subject'];
@@ -13,7 +13,3 @@ if(isset($_POST['submit'])) {
     mail($mail_to, $subject, $text, $header);
     header("Location: index.php?mailsend");
 }
-
-
-
-?>
