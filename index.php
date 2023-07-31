@@ -1,5 +1,5 @@
 <?php include_once "inc/header.php" ?>
-
+<div class="container">
     <div class="grid-container">
         
         <?php
@@ -19,5 +19,5 @@
             }
         } ?>
     </div>
-
+</div>
 <?php include_once "inc/footer.php" ?>
