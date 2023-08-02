@@ -12,10 +12,10 @@ if (isset($_POST['send_email'])) {
 
     if (mail($mail_to, $subject, $text, $header)) {
         echo 'Email sent successfully.';
+        header("Location: index.php?mailsend");
     } else {
         echo 'Error sending email.';
     }
 }
-
-header("Location: index.php?mailsend");
+?>
 
