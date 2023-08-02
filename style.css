@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   background-color: whitesmoke;
 }
 
@@ -38,6 +38,10 @@ header {
   bottom: 0;
   text-align: center;
   justify-content: center;
+}
+
+p {
+  margin-bottom: 0rem;
 }
 
 .form-container {

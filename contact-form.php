@@ -1,10 +1,10 @@
 <?php
 
 if (isset($_POST['send_email'])) {
-    $name = $_POST['name'];
-    $subject = $_POST['subject'];
-    $email_from = $_POST['mail'];
-    $message = $_POST['message'];
+    $name = filter_var($_POST['name'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $subject = filter_var($_POST['subject'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $email_from = filter_var($_POST['mail'], FILTER_SANITIZE_EMAIL);
+    $message = filter_var($_POST['message'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
     $mail_to = "richardangapin@yahoo.co.uk";
     $header = "From: " . $email_from;
